@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<%- include("../partials/head")%>
+
+  <body>
+    <header>
+      <%- include("../partials/header") %>
+    </header>
+
+    <div class="main">
+      <div class="container">
+        <% for(let i=0;i<datas.length ;i++) { %>
+          <h1>Nama :
+            <%= datas[i].name %>
+          </h1>
+          <% } %>
+      </div>
+    </div>
+
+    <footer>
+      <%- include("../partials/footer") %>
+    </footer>
+
+    <%- include("../partials/scripts")%>
+
+</html>
